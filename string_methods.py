@@ -8,6 +8,7 @@ def string_methods():
     multilinea = """Linea 1
     Linea 2
     Linea 3"""
+    
     print (f"Strip: {nombre.strip()}")
     print(f"Lstrip: {nombre.lstrip()}")
     print(f"Rstrip: {nombre.rstrip()}")
