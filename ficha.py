@@ -20,6 +20,21 @@ def ficha():
     #   - Verificar si el email contiene @ 
     #   - Extraer el dominio del email
     #   - Nombre con guion bajo en vez de espacio
+    #   - Contar las 'a' en el nombre
+    #   - Código secreto: nombre invertido en mayúsculas
+    #   - Las 3 notas, su suma, promedio y promedio entero
+    #   - Cierre decorativo usando repetición de string ("=" * 24)
+
+    nombre = input("Ingrese su nombre completo:")
+    email = input("Ingrese su email:")
+    nota_1 = int(input("Ingrese la primer nota:"))
+    nota_2 = int(input("Ingrese la segunda nota:"))
+    nota_3 = int(input("Ingrese la tercer nota:"))
+
+    nombre_limpio = nombre.strip().title()
+    pos_espacio = nombre_limpio.find(" ")
+    pos_arroba = email.find("@")
+
     print("=" * 24)
     print("""    FICHA DEL ALUMNO
 ========================""")
@@ -40,4 +55,3 @@ def ficha():
     print(f"Promedio: {(nota_1 + nota_2 + nota_3) / 3}")
     print(f"Promedio entero: {(nota_1 + nota_2 + nota_3) // 3}")
     print("=" * 24)
-
